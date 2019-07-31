@@ -6,12 +6,13 @@ spec:
   replicas: 1
   template:
     metadata:
-      label:
+      labels:
         app: flask-test
-    spec: 
+    spec:
       containers:
-      - name: flask-test
+      - name: integration-poc
         image: chetancheths/first_test:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5158
+      
