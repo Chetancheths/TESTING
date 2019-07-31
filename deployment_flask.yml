@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: integration-poc
-        image: chetancheths/first_test:1.0
+        image: chetancheths/first_test:2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5158
