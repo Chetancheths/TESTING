@@ -1,0 +1,17 @@
+apiVersion: extension/v1beta1
+kind: Deployment
+metadata:
+  name: flask-test
+spec: 
+  replicas: 1
+  template:
+    metadata:
+      label:
+        app: flask-test
+    spec: 
+      containers:
+      - name: flask-test
+        image: chetancheths/first_test:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5151
